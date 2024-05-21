@@ -8,7 +8,7 @@ detector_meta_url <- function() {
 }
 
 
-create_urls <- function(max_month = list(year = 2023, month = 12)) {
+create_urls <- function(max_month = list(year = 2024, month = 3)) {
   max_year <- max_month$year
   min_year <- 2015
   years <- seq(min_year, max_year)
@@ -31,7 +31,9 @@ create_urls <- function(max_month = list(year = 2023, month = 12)) {
           ifelse(
             .data$year == 2023,
             "Messquerschnitte%20(fahrtrichtungsbezogen)/",
-            "Messquerschnitt%20(fahrtrichtungsbezogen)/"
+            ifelse(.data$year == 2024,
+                   "2024/Messquerschnitte%20(richtungsbezogen)/",
+                   "Messquerschnitt%20(fahrtrichtungsbezogen)/")
           )
         ),
       url = paste0(

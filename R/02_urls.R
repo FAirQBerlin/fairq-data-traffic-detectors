@@ -8,7 +8,7 @@ detector_meta_url <- function() {
 }
 
 
-create_urls <- function(max_month = list(year = 2024, month = 3)) {
+create_urls <- function(max_month = list(year = 2024, month = 7)) {
   max_year <- max_month$year
   min_year <- 2015
   years <- seq(min_year, max_year)

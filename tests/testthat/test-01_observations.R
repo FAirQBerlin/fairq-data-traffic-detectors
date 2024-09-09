@@ -15,7 +15,7 @@ test_that("create_urls() creates correct URLS depending on month and year", {
     res[length(res)],
     paste0(
       "https://mdhopendata.blob.core.windows.net/verkehrsdetektion/2024/2024/Messquerschnitte%20",
-      "(richtungsbezogen)/mq_hr_2024_03.csv.gz"
+      "(richtungsbezogen)/mq_hr_2024_07.csv.gz"
     )
   )
 })

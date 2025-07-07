@@ -1,5 +1,5 @@
 select
-	avg(qualitaet = -1),
+	avg(pctg = -1),
 	avg(q_kfz_mq_hr = -1),
 	avg(q_pkw_mq_hr = -1),
 	avg(q_lkw_mq_hr = -1),

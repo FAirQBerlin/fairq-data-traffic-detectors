@@ -1,5 +1,5 @@
 select
-	qualitaet Qualitaet
+	pctg Qualitaet
 from
 	traffic_det_observations o
 inner join traffic_det_cross_sections cs

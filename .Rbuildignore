@@ -6,3 +6,8 @@
 ^Jenkinsfile$
 ^\.Renviron
 ^lib
+^fonts
+^.TinyTeX(/|$)
+^.aws$
+^.cache$
+^fairqDataTrafficDetectors/\\.TinyTeX$

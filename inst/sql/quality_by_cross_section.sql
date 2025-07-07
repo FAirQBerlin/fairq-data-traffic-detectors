@@ -1,6 +1,6 @@
 select
 	mq_name,
-	avg(qualitaet) Mittl_Qualitaet,
+	avg(pctg) Mittl_Qualitaet,
 	count(*) Anzahl_Zeilen
 from
 	traffic_det_observations o

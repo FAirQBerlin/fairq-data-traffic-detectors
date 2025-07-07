@@ -9,7 +9,7 @@ select
 	avgIf(v_kfz_mq_hr, v_kfz_mq_hr != -1) Mittl_Tempo_Gesamt,
 	avgIf(v_pkw_mq_hr, v_pkw_mq_hr != -1) Mittl_Tempo_PKW,
 	avgIf(v_lkw_mq_hr, v_lkw_mq_hr != -1) Mittl_Tempo_LKW,
-	avg(qualitaet) Mittl_Qualitaet
+	avg(pctg) Mittl_Qualitaet
 from
 	traffic_det_observations o
 -- Use only detectors with known metadata (coordinates, ...):

@@ -1,8 +1,10 @@
 Package: fairqDataTrafficDetectors
 Title: Import Traffic Detector Data Used to Predict Air Pollution
-Version: 24.09.0
-Authors@R: 
-    person("Mira Celine", "Klein", , "mira.klein@inwt-statistics.de", role = c("aut", "cre"))
+Version: 25.07.1
+Authors@R: c(
+    person("Mira Celine", "Klein", , "mira.klein@inwt-statistics.de", role = c("aut", "cre")),
+    person("Jan", "Abel", , "jan.abel@inwt-statistics.de", role = c("ctb"))
+    )
 Description: Import traffic intensity as assessed by traffic detectors and write it to database.
 License: file LICENSE
 Imports:

@@ -7,4 +7,5 @@ select
 	avgIf(v_pkw_mq_hr = -1, q_pkw_mq_hr > 0),
 	avgIf(v_lkw_mq_hr = -1, q_lkw_mq_hr > 0)
 from
-	traffic_det_observations;
+	traffic_det_observations
+where tag < toStartOfMonth(now());

@@ -10,6 +10,7 @@ on
 	tdo.mq_name = cs.mq_short_name
 where
 	q_kfz_mq_hr != -1
+  and tag < toStartOfMonth(now())
 group by
 	mq_name,
 	Jahr,

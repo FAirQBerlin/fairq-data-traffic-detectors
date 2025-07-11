@@ -8,6 +8,7 @@ from
 left join traffic_det_cross_sections cs
 on
 	o.mq_name = cs.mq_short_name
+where tag < toStartOfMonth(now())
 group by 
 	mq_name,
 	lon,

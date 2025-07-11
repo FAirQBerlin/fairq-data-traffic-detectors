@@ -7,6 +7,7 @@ select
 	round(Anzahl_Zeilen / Messzeitraum, 1) Anteil_vorhandene_Werte
 from
 	traffic_det_observations
+where tag < toStartOfMonth(now())
 group by
 	mq_name
 order by

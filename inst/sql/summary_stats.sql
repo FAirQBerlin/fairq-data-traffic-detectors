@@ -40,4 +40,5 @@ SELECT
 	quantileExact(0.9)(v_lkw_mq_hr),
 	avg(v_lkw_mq_hr)
 from
-	traffic_det_observations;
+	traffic_det_observations
+where tag < toStartOfMonth(now());

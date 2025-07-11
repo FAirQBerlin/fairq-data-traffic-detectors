@@ -8,7 +8,7 @@ data_sources <- function() {
   list(
     single_source("cross_sections",
                   sheet = "Stammdaten_TEU_20220720"),
-    single_source("observations",
+    single_source("observations_backup",
                   urls = create_urls())
   )
 }
